@@ -1,0 +1,74 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+$font-main: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+:root {
+  --text: #1A1D20;
+  --text-muted: #737B85;
+
+  --bg: #F7F8FA;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-main;
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem); /* 15px -> 17px */
+  line-height: 1.55;
+  color: #1A1D20;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+.hero-title {
+  font-size: clamp(2rem, 1.3rem + 3.5vw, 3.75rem); /* ~32px -> 60px */
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h2,
+.section-title {
+  font-size: clamp(1.5rem, 1.1rem + 2vw, 2rem); /* ~24px -> 40px */
+  line-height: 1.18;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h3,
+.card-title {
+  font-size: clamp(1.15rem, 1rem + 0.7vw, 1.45rem); /* ~18px -> 23px */
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.section-overline {
+  font-size: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem); /* 12px -> 13px */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #737B85;
+}

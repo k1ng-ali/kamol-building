@@ -1,0 +1,17 @@
+// Цветовая схема по референсу Archi Dom
+$bg-light: #F7F8FA;
+$bg-dark: #141619;
+$surface-white: #FFFFFF;
+$text-main: #1A1D20;
+$text-muted: #737B85;
+$accent-bronze: #8D7B68; // теплый благородный тон кнопок из референса
+
+// Радиусы и тени
+$radius-card: 24px;
+$radius-pill: 100px;
+$shadow-subtle: 0 12px 32px rgba(0, 0, 0, 0.15);
+
+// Брейкпоинты (Mobile-First)
+$bp-mobile: 480px;
+$bp-tablet: 810px;
+$bp-desktop: 1024px;
