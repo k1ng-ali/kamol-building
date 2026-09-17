@@ -8,6 +8,7 @@ useReveal('.projects')
 
 const isModalOpen = ref(false)
 const selectedProject = ref<ProjectItem | null>(null)
+const assetUrl = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`
 
 const projectList: ProjectItem[] = [
   {
@@ -19,8 +20,8 @@ const projectList: ProjectItem[] = [
     price: 'от 480 000 ₽',
     buildTime: '10–14 дней',
     dimensions: '7.5 × 3.0 м',
-    mainImage: '/banya5.jpg',
-    gallery: ['/banya1.jpg', '/banya4.jpg', '/banya-inside4.jpg', '/banya_inside2.jpg'],
+    mainImage: assetUrl('banya5.jpg'),
+    gallery: [assetUrl('banya1.jpg'), assetUrl('banya4.jpg'), assetUrl('banya-inside4.jpg'), assetUrl('banya_inside2.jpg')],
     description: 'Всесезонный модульный банный комплекс в скандинавском кубизме. Полноценная комната отдыха, санузел и спа-парная с можжевеловым панно.',
     features: [
       'Утепление 150 мм плитами Knauf Nord (зимний контур)',
@@ -38,8 +39,8 @@ const projectList: ProjectItem[] = [
     price: 'от 190 000 ₽',
     buildTime: '4–6 дней',
     dimensions: '6.0 × 5.0 м',
-    mainImage: '/carport1.jpg',
-    gallery: ['/carport1.jpg'],
+    mainImage: assetUrl('carport1.jpg'),
+    gallery: [assetUrl('carport1.jpg')],
     description: 'Двускатный навес для парковки внедорожника. Открытые мощные стропильные фермы из клееного бруса с подшивом доской.',
     features: [
       'Силовые стойки 150×150 мм с металлическими анкерными опорами',
@@ -57,8 +58,8 @@ const projectList: ProjectItem[] = [
     price: 'от 140 000 ₽',
     buildTime: '5–7 дней',
     dimensions: '8.0 × 3.5 м',
-    mainImage: '/veranda3.jpg',
-    gallery: ['/veranda3.jpg', '/veranda2.jpg','/veranda4.jpg', '/veranda1.jpg'],
+    mainImage: assetUrl('veranda3.jpg'),
+    gallery: [assetUrl('veranda3.jpg'), assetUrl('veranda2.jpg'), assetUrl('veranda4.jpg'), assetUrl('veranda1.jpg')],
     description: 'Фасадная открытая галерея-веранда для отдыха. Оснащена классическими скандинавскими ограждениями крест-накрест и маршевой лестницей.',
     features: [
       'Основание: стальные винтовые сваи d=108 мм с антикоррозийным грунтом',
@@ -76,8 +77,8 @@ const projectList: ProjectItem[] = [
     price: 'от 110 000 ₽',
     buildTime: '3–5 дней',
     dimensions: '5.0 × 2.4 м',
-    mainImage: '/hozblok-pro4.jpg',
-    gallery: ['/hozblok-pro4.jpg', '/hozblokPRO1.jpg', '/hozblok_besedka2.jpg', '/hozblok_besedka3.jpg', '/hozblok-besedka4.jpg'],
+    mainImage: assetUrl('hozblok-pro4.jpg'),
+    gallery: [assetUrl('hozblok-pro4.jpg'), assetUrl('hozblokPRO1.jpg'), assetUrl('hozblok_besedka2.jpg'), assetUrl('hozblok_besedka3.jpg'), assetUrl('hozblok-besedka4.jpg')],
     description: 'Современная постройка для мастерской, хранения газонокосилки или квадроцикла. Комбинированный фасад: дерево + профлист Антрацит.',
     features: [
       'Металлическая взломостойкая дверь с замком 3-го класса',

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useReveal} from "@/app/useReveal.ts";
 useReveal('.hero');
+const heroImage = `${import.meta.env.BASE_URL}hero-bg.jpg`
 
 </script>
 
@@ -10,7 +11,7 @@ useReveal('.hero');
     <!-- Фоновое изображение с градиентной маской -->
     <div class="hero__media" >
       <img
-          src="/hero-bg.jpg"
+          :src="heroImage"
           alt="Модульная Hi-Tech баня с панорамным остеклением"
           class="hero__img"
           data-reveal-scale

@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { useReveal} from "@/app/useReveal.ts";
 
 useReveal('.building-step-section');
+const buildingImage = `${import.meta.env.BASE_URL}hozblokPRO1.jpg`
 
 interface AccordionItem {
   id: number
@@ -112,7 +113,7 @@ const onLeave = (el: Element) => {
     <div class="right-content" data-reveal-right>
       <div class="media">
         <img
-            src="/hozblokPRO1.jpg"
+            :src="buildingImage"
             alt="Современный ХозБлок в Hi-Tech стиле"
             class="img-fluid"
         >

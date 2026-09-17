@@ -2,6 +2,7 @@
 import { useReveal } from "@/app/useReveal.ts"  
 
 useReveal('.master-about')  
+const masterImage = `${import.meta.env.BASE_URL}carport1.jpg`
 
 const guarantees = [
   {
@@ -28,7 +29,7 @@ const guarantees = [
     <div class="master-about__grid">
       <div class="master-about__media" data-reveal-left>  
         <img
-            src="/carport1.jpg"
+            :src="masterImage"
             alt="Камол — мастер каркасного и металлического строительства"
             class="master-about__img"
         />
