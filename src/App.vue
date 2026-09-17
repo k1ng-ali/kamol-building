@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Header from './components/Header.vue'
-import { useReveal } from "@/app/useReveal.ts";
 
 </script>
 
@@ -12,3 +11,16 @@ import { useReveal } from "@/app/useReveal.ts";
     </main>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-inline: clamp(16px, 3vw, 32px);
+}
+
+.content {
+  flex: 1;
+}
+</style>

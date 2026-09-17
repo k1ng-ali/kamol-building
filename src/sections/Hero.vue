@@ -6,10 +6,11 @@ useReveal('.hero');
 
 <template>
   <section class="hero">
+
     <!-- Фоновое изображение с градиентной маской -->
     <div class="hero__media" >
       <img
-          src="/public/hero-bg.jpg"
+          src="/hero-bg.jpg"
           alt="Модульная Hi-Tech баня с панорамным остеклением"
           class="hero__img"
           data-reveal-scale

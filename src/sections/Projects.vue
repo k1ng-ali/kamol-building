@@ -20,7 +20,7 @@ const projectList: ProjectItem[] = [
     buildTime: '10–14 дней',
     dimensions: '7.5 × 3.0 м',
     mainImage: '/banya5.jpg',
-    gallery: ['/banya1.jpg', '/banya4.jpg', 'banya-inside4.jpg', 'banya_inside2.jpg'],
+    gallery: ['/banya1.jpg', '/banya4.jpg', '/banya-inside4.jpg', '/banya_inside2.jpg'],
     description: 'Всесезонный модульный банный комплекс в скандинавском кубизме. Полноценная комната отдыха, санузел и спа-парная с можжевеловым панно.',
     features: [
       'Утепление 150 мм плитами Knauf Nord (зимний контур)',
@@ -77,7 +77,7 @@ const projectList: ProjectItem[] = [
     buildTime: '3–5 дней',
     dimensions: '5.0 × 2.4 м',
     mainImage: '/hozblok-pro4.jpg',
-    gallery: ['/hozblok-pro4.jpg', '/hozblokPRO1.jpg', 'hozblok_besedka2.jpg', 'hozblok_besedka3.jpg', 'hozblok-besedka4.jpg'],
+    gallery: ['/hozblok-pro4.jpg', '/hozblokPRO1.jpg', '/hozblok_besedka2.jpg', '/hozblok_besedka3.jpg', '/hozblok-besedka4.jpg'],
     description: 'Современная постройка для мастерской, хранения газонокосилки или квадроцикла. Комбинированный фасад: дерево + профлист Антрацит.',
     features: [
       'Металлическая взломостойкая дверь с замком 3-го класса',
@@ -184,6 +184,7 @@ const closeModal = () => {
 
   &__slider {
     flex: 1;
+    min-width: 0;
     display: flex;
     gap: 20px;
     overflow-x: auto;
